@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth; /* Делает переход плавным, а не рывком */
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -120,6 +124,7 @@ img {
 }
 
 .hero__button {
+    text-decoration: none;
     padding: 1rem 2rem;
     background-color: #4CAF50;
     color: #fff;
