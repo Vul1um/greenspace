@@ -91,6 +91,12 @@ img {
     background-color: #45a049;
 }
 
+.img_size {
+    width: 80%;
+    height: 225px;
+    object-fit: cover;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
@@ -469,6 +475,12 @@ img {
         gap: 1rem;
     }
 
+    .img_size {
+        width: 225px;
+        height: 225px;
+        object-fit: cover;
+    }
+
     .hero__container {
         flex-direction: column;
         text-align: center;
@@ -500,6 +512,12 @@ img {
         align-items: center;
     }
 
+    .img_size {
+        width: 100;
+        height: 200px;
+        object-fit: cover;
+    }
+
     .hero__title {
         font-size: 1.5rem;
     }
@@ -513,4 +531,8 @@ img {
     .about__grid {
         grid-template-columns: 1fr;
     }
+
+    .hero__button {
+    font-size: 0.8rem;
+}
 }
