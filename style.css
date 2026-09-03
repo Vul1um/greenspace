@@ -91,11 +91,7 @@ img {
     background-color: #45a049;
 }
 
-.img_size {
-    width: 80%;
-    height: 225px;
-    object-fit: cover;
-}
+
 
 /* Hero Section */
 .hero {
@@ -155,6 +151,11 @@ img {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
+.hero__img_size {
+    width: 80%;
+    height: 225px;
+    object-fit: cover;
+}
 /* Catalog Section */
 .catalog {
     padding: 4rem 2rem;
@@ -512,7 +513,7 @@ img {
         align-items: center;
     }
 
-    .img_size {
+    .hero__img_size {
         width: 100;
         height: 200px;
         object-fit: cover;
