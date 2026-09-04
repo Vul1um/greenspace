@@ -121,7 +121,7 @@ img {
 .hero__description {
     font-size: 1.1rem;
     color: #555;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     line-height: 1.8;
 }
 
@@ -152,7 +152,7 @@ img {
 }
 
 .hero__img_size {
-    width: 80%;
+    width: 500px;
     height: 225px;
     object-fit: cover;
 }
@@ -377,7 +377,6 @@ img {
 .banner__description {
     font-size: 1.1rem;
     color: #555;
-    margin-bottom: 2rem;
     line-height: 1.8;
 }
 
@@ -476,9 +475,9 @@ img {
         gap: 1rem;
     }
 
-    .img_size {
-        width: 225px;
-        height: 225px;
+    .hero__img_size {
+        width: 325px;
+        height: 200px;
         object-fit: cover;
     }
 
@@ -514,7 +513,7 @@ img {
     }
 
     .hero__img_size {
-        width: 100;
+        width: 325px;
         height: 200px;
         object-fit: cover;
     }
