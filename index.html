@@ -7,186 +7,279 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Header -->
     <header class="header">
         <div class="header__container">
             <div class="header__logo">
-                <span class="header__logo-icon"></span>
-                <span class="header__logo-text">GreenSpace</span>
+                <span class="header__logo-icon">🌿</span>
+                <span>GreenSpace</span>
             </div>
-            <button class="header__button">Войти</button>
+
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a href="#features" class="header__menu-link">Преимущества</a></li>
+                    <li><a href="#faq" class="header__menu-link">FAQ</a></li>
+                    <li><a href="#gallery" class="header__menu-link">Галерея</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <!-- Кнопка переключения темы -->
+                <button class="header__button" id="openModalBtn">Оставить заявку</button>
+
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                    <span id="themeIcon">🌙</span>
+                </button>
+                <!-- Бургер-меню -->
+                <button class="burger" id="burgerBtn" aria-label="Открыть меню">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <main class="main">
-        <section class="hero">
-            <div class="hero__container">
-                <div class="hero__content">
-                    <h1 class="hero__title">Зеленый уголок в вашем доме</h1>
-                    <p class="hero__description">
-                        Превратите свой дом в зеленый оазис с нашими растениями. 
-                        Свежий воздух, уютная атмосфера и никаких хлопот — мы поможем с выбором и дадим советы по уходу.   
-                    </p>
-                    <a class="hero__button" href="#popular_plants">Смотреть каталог</a>
-                </div>
-                <div class="hero__image">
-                    <img src="images/растения.jpg" alt="Комнатные растения" class="hero__img_size">
-                </div>
-            </div>
-        </section>
-
-        <section class="catalog" id="popular_plants">
-            <div class="catalog__container">
-                <h2 class="catalog__title">Популярные растения</h2>
-                <div class="catalog__grid">
-                    <article class="card">
-                        <div class="card__image">
-                            <img src="images/монстера.jpg" alt="Монстера">
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Монстера</h3>
-                            <p class="card__description">Тропическая лиана с крупными резными листьями. Неприхотлива и быстро растёт.</p>
-                            <button class="card__button">Подробнее</button>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="card__image">
-                            <img src="images/фикус.jpg" alt="Фикус">
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Фикус</h3>
-                            <p class="card__description">Эффектное растение с глянцевыми листьями. Очищает воздух и хорошо переносит тень.</p>
-                            <button class="card__button">Подробнее</button>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="card__image">
-                            <img src="images/сансевиерия.jpg" alt="Сансевиерия">
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Сансевиерия</h3>
-                            <p class="card__description">Неубиваемый суккулент с полосатыми листьями. Идеален для новичков и редкого полива.</p>
-                            <button class="card__button">Подробнее</button>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="card__image">
-                            <img src="images/спатифиллум.jpg" alt="Спатифиллум">
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Спатифиллум</h3>
-                            <p class="card__description">«Женское счастье» с нежными белыми цветами. Любит тень и увлажняет воздух.</p>
-                            <button class="card__button">Подробнее</button>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="card__image">
-                            <img src="images/драцена.jpg" alt="Драцена">
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Драцена</h3>
-                            <p class="card__description">Домашняя пальма с изящными листьями. Добавляет экзотики и не требует сложного ухода.</p>
-                            <button class="card__button">Подробнее</button>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="card__image">
-                            <img src="images/алоэ.jpg" alt="Алоэ">
-                        </div>
-                        <div class="card__content">
-                            <h3 class="card__title">Алоэ</h3>
-                            <p class="card__description">Лекарственный суккулент. Почти не требует полива и любит яркий свет.</p>
-                            <button class="card__button">Подробнее</button>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="features">
-            <div class="features__container">
-                <h2 class="features__title">Почему выбирают нас</h2>
-                <div class="features__grid">
-                    <div class="feature-card">
-                        <div class="feature-card__icon">🚚</div>
-                        <h3 class="feature-card__title">Быстрая доставка</h3>
-                        <p class="feature-card__description">Доставляем растения по всей стране в специальной упаковке</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-card__icon">💚</div>
-                        <h3 class="feature-card__title">Гарантия качества</h3>
-                        <p class="feature-card__description">Все растения здоровы и проходят контроль перед отправкой</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-card__icon">📚</div>
-                        <h3 class="feature-card__title">Инструкции по уходу</h3>
-                        <p class="feature-card__description">К каждому растению прилагается подробная инструкция</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="about">
-            <div class="about__container">
-                <h2 class="about__title">О нашем магазине</h2>
-                <p class="about__description">
-                    тоже что-то придумать про магазин
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">Зеленый уголок в вашем доме</h1>
+                <p class="hero__description">
+                    Превратите свой дом в зеленый оазис с нашими растениями. 
+                    Свежий воздух, уютная атмосфера и никаких хлопот — мы поможем с выбором и дадим советы по уходу.
                 </p>
-                <div class="about__grid">
-                    <div class="about-card">
-                        <div class="about-card__image">
-                            <img src="images/надёжность.jpg" alt="Опыт">
-                        </div>
-                        <h3 class="about-card__title">10 лет опыта</h3>
-                        <p class="about-card__description">Работаем с 2016 года и знаем, как вырастить счастливые растения</p>    
-                    </div>
+                <a href="#popular_plants" class="hero__button">Смотреть каталог</a>
+            </div>
+            <div class="hero__image">
+                <img src="images/растения.jpg" alt="Комнатные растения" class="hero__img_size">
+            </div>
+        </div>
+    </section>
 
-                    <div class="about-card">
-                        <div class="about-card__image">
-                            <img src="images/доставка.jpg" alt="Клиенты">
-                        </div>
-                        <h3 class="about-card__title">5000+ клиентов</h3>
-                        <p class="about-card__description">Тысячи довольных покупателей возвращаются к нам и советуют друзьям</p>
+    <!-- Catalog Section -->
+    <section class="catalog" id="popular_plants">
+        <div class="catalog__container">
+            <h2 class="catalog__title">Популярные растения</h2>
+            <div class="catalog__grid">
+                <div class="card">
+                    <div class="card__image">
+                        <img src="images/монстера.jpg" alt="Монстера">
                     </div>
-
-                    <div class="about-card">
-                        <div class="about-card__image">
-                            <img src="images/разнообразие растений.jpg" alt="Растения">
-                        </div>
-                        <h3 class="about-card__title">Множество видов</h3>
-                        <p class="about-card__description">Разнообразные растения в каталоге: от неприхотливых суккулентов до редких тропиков</p>
+                    <div class="card__content">
+                        <h3 class="card__title">Монстера</h3>
+                        <p class="card__description">Тропическая лиана с крупными резными листьями. Неприхотлива и быстро растёт.</p>
+                        <button class="card__button">Подробнее</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="images/фикус.jpg" alt="Фикус">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__title">Фикус</h3>
+                        <p class="card__description">Эффектное растение с глянцевыми листьями. Очищает воздух и хорошо переносит тень.</p>
+                        <button class="card__button">Подробнее</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="images/сансевиерия.jpg" alt="Сансевиерия">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__title">Сансевиерия</h3>
+                        <p class="card__description">Неубиваемый суккулент с полосатыми листьями. Идеален для новичков и редкого полива.</p>
+                        <button class="card__button">Подробнее</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="images/спатифиллум.jpg" alt="Спатифиллум">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__title">Спатифиллум</h3>
+                        <p class="card__description">«Женское счастье» с нежными белыми цветами. Любит тень и увлажняет воздух.</p>
+                        <button class="card__button">Подробнее</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="images/драцена.jpg" alt="Драцена">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__title">Драцена</h3>
+                        <p class="card__description">Домашняя пальма с изящными листьями. Добавляет экзотики и не требует сложного ухода.</p>
+                        <button class="card__button">Подробнее</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="images/алоэ.jpg" alt="Алоэ">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__title">Алоэ</h3>
+                        <p class="card__description">Лекарственный суккулент. Почти не требует полива и любит яркий свет.</p>
+                        <button class="card__button">Подробнее</button>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="banner">
-            <div class="banner__container">
-                <div class="banner__content">
-                    <h2 class="banner__title">Присоединяйтесь к нашему сообществу</h2>
-                    <p class="banner__description">
-                        Подписывайтесь на соцсети и следите за новыми видами растений в каталоге, их жизненным циклом и узнавайте новые факты каждый день!
-                    </p>
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features__container">
+            <h2 class="features__title">Почему выбирают нас</h2>
+            <div class="features__grid">
+                <div class="feature-card">
+                    <div class="feature-card__icon">🚚</div>
+                    <h3 class="feature-card__title">Быстрая доставка</h3>
+                    <p class="feature-card__description">Доставляем растения по всей стране в специальной упаковке</p>
                 </div>
-                <div class="banner__image">
-                    <img src="images/сообщетсво.jpg" alt="Сообщество" class="hero__img_size">
+                <div class="feature-card">
+                    <div class="feature-card__icon">💚</div>
+                    <h3 class="feature-card__title">Гарантия качества</h3>
+                    <p class="feature-card__description">Все растения здоровы и проходят контроль перед отправкой</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card__icon">📚</div>
+                    <h3 class="feature-card__title">Инструкции по уходу</h3>
+                    <p class="feature-card__description">К каждому растению прилагается подробная инструкция</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about__container">
+            <h2 class="about__title">О нашем магазине</h2>
+            <p class="about__description">
+                GreenSpace — интернет-магазин комнатных растений. С 2016 года помогаем делать дома зеленее и уютнее: 
+                тщательно отбираем растения, доставляем по всей стране и подсказываем, как за ними ухаживать.
+            </p>
+            <div class="about__grid">
+                <div class="about-card">
+                    <div class="about-card__image">
+                        <img src="images/надёжность.jpg" alt="Опыт">
+                    </div>
+                    <h3 class="about-card__title">10 лет опыта</h3>
+                    <p class="about-card__description">Работаем с 2016 года и знаем, как вырастить счастливые растения</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card__image">
+                        <img src="images/доставка.jpg" alt="Клиенты">
+                    </div>
+                    <h3 class="about-card__title">5000+ клиентов</h3>
+                    <p class="about-card__description">Тысячи довольных покупателей возвращаются к нам и советуют друзьям</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card__image">
+                        <img src="images/разнообразие растений.jpg" alt="Виды">
+                    </div>
+                    <h3 class="about-card__title">Множество видов</h3>
+                    <p class="about-card__description">Разнообразные растения в каталоге: от неприхотливых суккулентов до редких тропиков</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="banner__container">
+            <div class="banner__content">
+                <h2 class="banner__title">Присоединяйтесь к нашему сообществу</h2>
+                <p class="banner__description">
+                    Подписывайтесь на соцсети и следите за новыми видами растений в каталоге, 
+                    их жизненным циклом и узнавайте новые факты каждый день!
+                </p>
+            </div>
+            <div class="banner__image">
+                <img src="images/сообщетсво.jpg" alt="Сообщество" class="hero__img_size">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (Задание 6 - Аккордеон) -->
+    <section class="faq" id="faq">
+        <div class="faq__container">
+            <h2 class="faq__title">Часто задаваемые вопросы</h2>
+            <div class="faq__list">
+                <div class="faq__item">
+                    <button class="faq__question">
+                        <span>Как часто нужно поливать растения?</span>
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Частота полива зависит от вида растения. Суккуленты поливают раз в 1-2 недели, тропические — 2-3 раза в неделю. Всегда проверяйте влажность почвы перед поливом.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question">
+                        <span>Какие растения лучше подходят для новичков?</span>
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Для начинающих идеально подходят сансевиерия, потос, спатифиллум и замиокулькас. Они неприхотливы и прощают ошибки в уходе.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question">
+                        <span>Как осуществляется доставка?</span>
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Мы доставляем растения по всей России в специальной упаковке, защищающей от повреждений. Срок доставки — 1-5 дней в зависимости от региона.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question">
+                        <span>Что делать, если растение прибыло повреждённым?</span>
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Свяжитесь с нами в течение 24 часов после получения заказа, пришлите фото повреждения, и мы бесплатно заменим растение или вернём деньги.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question">
+                        <span>Можно ли вернуть растение, если оно не подошло?</span>
+                        <span class="faq__icon">+</span>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Да, вы можете вернуть растение в течение 14 дней с момента покупки, если оно сохранило товарный вид и не было повреждено.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section (Задание 8 - Галерея) -->
+    <section class="gallery" id="gallery">
+        <div class="gallery__container">
+            <h2 class="gallery__title">Галерея растений</h2>
+            <div class="gallery__main">
+                <img src="images/главное.jpg" alt="Главное изображение" id="mainGalleryImage">
+            </div>
+            <div class="gallery__thumbnails">
+                <img src="images/главное.jpg" alt="Композиция" class="gallery__thumb gallery__thumb--active" data-src="images/главное.jpg">
+                <img src="images/монстера.jpg" alt="Монстера" class="gallery__thumb" data-src="images/монстера.jpg">
+                <img src="images/фикус.jpg" alt="Фикус" class="gallery__thumb" data-src="images/фикус.jpg">
+                <img src="images/сансевиерия.jpg" alt="Сансевиерия" class="gallery__thumb" data-src="images/сансевиерия.jpg">
+                <img src="images/спатифиллум.jpg" alt="Спатифиллум" class="gallery__thumb" data-src="images/спатифиллум.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__column">
                 <h3 class="footer__title">О компании</h3>
                 <p class="footer__text">
-                    GreenSpace — интернет-магазин комнатных растений. С 2016 года помогаем делать дома зеленее и уютнее: тщательно отбираем растения, доставляем по всей стране и подсказываем, как за ними ухаживать.
+                    GreenSpace — интернет-магазин комнатных растений. С 2016 года помогаем делать дома зеленее и уютнее: 
+                    тщательно отбираем растения, доставляем по всей стране и подсказываем, как за ними ухаживать.
                 </p>
             </div>
             <div class="footer__column">
@@ -197,11 +290,60 @@
                     <li class="footer__item">Адрес: г. Москва Мичуринский пр. 8/29</li>
                 </ul>
             </div>
+            <div class="footer__column">
+                <h3 class="footer__title">Навигация</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#hero" class="footer__link">Главная</a></li>
+                    <li class="footer__item"><a href="#popular_plants" class="footer__link">Каталог</a></li>
+                    <li class="footer__item"><a href="#about" class="footer__link">О нас</a></li>
+                    <li class="footer__item"><a href="#faq" class="footer__link">FAQ</a></li>
+                </ul>
+            </div>
         </div>
         <div class="footer__copyright">
-            <p>© 2026 GreenSpace. Ничего не защищено.</p>
+            © 2026 GreenSpace. Ничего не защищено.
         </div>
     </footer>
+
+    <!-- Модальное окно заявки (Задания 2 и 3) -->
+    <div class="modal" id="modal">
+        <div class="modal__overlay" id="modalOverlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" id="modalClose" aria-label="Закрыть">&times;</button>
+            <h2 class="modal__title">Оставить заявку</h2>
+            <p class="modal__subtitle">Заполните форму, и мы свяжемся с вами в ближайшее время</p>
+            <form class="modal__form" id="requestForm">
+                <div class="form-group">
+                    <label for="userName" class="form-label">Ваше имя</label>
+                    <input type="text" id="userName" class="form-input" placeholder="Иван Иванов" required>
+                </div>
+                <div class="form-group">
+                    <label for="userPhone" class="form-label">Телефон</label>
+                    <input type="tel" id="userPhone" class="form-input" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="form-group">
+                    <label for="userEmail" class="form-label">Email</label>
+                    <input type="email" id="userEmail" class="form-input" placeholder="example@mail.ru">
+                </div>
+                <button type="submit" class="modal__submit">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно деталей растения -->
+    <div class="modal" id="plantModal">
+        <div class="modal__overlay" id="plantModalOverlay"></div>
+        <div class="modal__content modal__content--large" id="plantModalContent">
+            <button class="modal__close" id="plantModalClose" aria-label="Закрыть">&times;</button>
+            <div id="plantModalBody"></div>
+        </div>
+    </div>
+
+    <!-- Кнопка "Наверх" (Задание 5) -->
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Наверх">
+        <span>↑</span>
+    </button>
+
     <script src="script.js"></script>
 </body>
 </html>
