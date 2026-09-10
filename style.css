@@ -84,7 +84,7 @@ img {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.4s;
 }
 
 .header__button:hover {
@@ -238,7 +238,7 @@ img {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.4s;
 }
 
 .card__button:hover {
@@ -851,6 +851,7 @@ body[data-theme="dark"] .plant-detail__feature-item {
 .faq__container {
     max-width: 800px;
     margin: 0 auto;
+    font-weight: 600;
 }
 .faq__title {
     text-align: center;
@@ -885,6 +886,7 @@ body[data-theme="dark"] .plant-detail__feature-item {
     font-size: 1.1rem;
     font-weight: 600;
     color: #2e7d32;
+    user-select: none;
     text-align: left;
     transition: background-color 0.3s;
 }
@@ -893,7 +895,7 @@ body[data-theme="dark"] .plant-detail__feature-item {
 }
 .faq__icon {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 500;
     transition: transform 0.3s;
     flex-shrink: 0;
     margin-left: 1rem;
