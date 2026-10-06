@@ -227,11 +227,6 @@ document.addEventListener('DOMContentLoaded', () => {
     faqItems.forEach(item => {
         const question = item.querySelector('.faq__question');
         question.addEventListener('click', () => {
-            faqItems.forEach(otherItem => {
-                if (otherItem !== item && otherItem.classList.contains('active')) {
-                    otherItem.classList.remove('active');
-                }
-            });
             item.classList.toggle('active');
         });
     });

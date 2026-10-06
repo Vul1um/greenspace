@@ -564,12 +564,16 @@ body[data-theme="dark"] .burger__line {
 body[data-theme="dark"] .faq__question:hover {
     background-color: #3a3a3a;
 }
-body[data-theme="dark"] .plant-detail__care,
-body[data-theme="dark"] .plant-detail__features {
+body[data-theme="dark"] .plant-detail__care {
     color: #bbb;
+    background-color: #1a1a1a;
 }
 body[data-theme="dark"] .plant-detail__feature-item {
     background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body[data-theme="dark"] .plant-detail__desc {
     color: #e0e0e0;
 }
 
@@ -911,9 +915,12 @@ body[data-theme="dark"] .plant-detail__feature-item {
     color: #555;
     line-height: 1.7;
 }
+
 .faq__item.active .faq__answer {
     max-height: 300px;
-    padding: 0 1.5rem 1.25rem;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 /* ===== ГАЛЕРЕЯ ===== */
