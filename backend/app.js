@@ -11,6 +11,8 @@ app.use(cors());
 // ===== ГЛАВНОЕ: раздаём статику из папки frontend =====
 app.use(express.static(path.join(__dirname, "../frontend")));
 
+app.use('/images', express.static(path.join(__dirname, "../frontend/images")));
+
 // При обращении к корню сайта отдаём index.html
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "../frontend/index.html"));
@@ -41,5 +43,4 @@ app.get("/plants/cheap", (req, res) => {
 const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Сайт доступен: http://localhost:${PORT}`);
-    console.log(`API растений: http://localhost:${PORT}/plants`);
 });
