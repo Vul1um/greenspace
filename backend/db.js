@@ -1,19 +1,13 @@
- const mysql = require("mysql2");
+const mysql = require("mysql2/promise");
 
-const connection = mysql.createConnection({
+const pool = mysql.createPool({
     host: "localhost",
     user: "root",
-    password: "1111",   // ← пароль от MySQL Workbench
+    password: "1111",
     database: "greenspace",
-    port: 3306
+    port: 3306,
+    waitForConnections: true,
+    connectionLimit: 10
 });
 
-connection.connect((err) => {
-    if (err) {
-        console.error("Ошибка подключения к БД:", err.message);
-        return;
-    }
-    console.log("Подключение успешно!");
-});
-
-module.exports = connection;
+module.exports = pool;
